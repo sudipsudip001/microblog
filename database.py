@@ -4,7 +4,8 @@ from sqlalchemy.orm import sessionmaker
 import os
 
 SQLALCHEMY_DATABASE_URL = os.getenv(
-    "DATABASE_URL"
+    "DATABASE_URL",
+    "postgresql://bookuser:bookpass123@localhost/bookstore"
 )
 
 if SQLALCHEMY_DATABASE_URL.startswith("postgres://"):
