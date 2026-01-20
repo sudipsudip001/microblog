@@ -12,7 +12,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "https://microblog-frontend-git-main-sudip-shresthas-projects-79f29666.vercel.app"
+        "https://microblog-frontend-git-main-sudip-shresthas-projects-79f29666.vercel.app",
+        "https://microblog-frontend.vercel.app/"
     ], # In production, replace with your frontend URL
     allow_credentials=True,
     allow_methods=["*"],
